@@ -17,7 +17,7 @@ const Bio = ({ secondary }) => (
   <GridItem>
     <VStack m="auto" w="75%" spacing="12px" pt="5%">
       <Text>
-        Hi, I&apos;m Everest! I studied Environmental Technology at Federal University of Technology Owerri(F.U.T.O). But, I ventured into software development because of passion for mathematical related career path, and I&apos;m currently working at{" "}
+        Hi, I&apos;m Everest Ukweh! I&apos;m a graduate the Federal University of Technology, Owerri where I studied Environmental Technology, But I ventured into programming as a result of my passion for maths and convictions, and I&apos;m currently working at{" "}
         <Link href="https://www.elacademy.org.ng/" isExternal>
           El-Academy
         </Link>{" "}
