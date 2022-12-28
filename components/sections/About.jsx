@@ -17,12 +17,19 @@ const Bio = ({ secondary }) => (
   <GridItem>
     <VStack m="auto" w="75%" spacing="12px" pt="5%">
       <Text>
-        Hi, I&apos;m Everest Ukweh! I&apos;m a graduate the Federal University of Technology, Owerri where I studied Environmental Technology, But I ventured into programming as a result of my passion for maths and convictions, and I&apos;m currently working at{" "}
+        Hi, I&apos;m Everest Ukweh! a graduate of the Federal University of
+        Technology, Owerri where I studied Environmental Technology, But I
+        ventured into programming as a result of my passion and convictions for
+        it. I&apos;m currently working at{" "}
         <Link href="https://www.elacademy.org.ng/" isExternal>
           El-Academy
         </Link>{" "}
-        as a <strong style={{ color: secondary }}>Tutor & Software Developer (Intern)</strong>{" "}
-        Taught many client/students how to code. Prior to that, I was at{" "}
+        as a{" "}
+        <strong style={{ color: secondary }}>
+          Tutor & Software Developer (Intern)
+        </strong>{" "}
+        where I have taught many client/students how to program. Prior to that, I
+        was at{" "}
         <Link href="https://www.rechargeandgetpaid.com" isExternal>
           Recharge And Get Paid
         </Link>{" "}
@@ -31,7 +38,10 @@ const Bio = ({ secondary }) => (
           Walker.ng
         </Link>{" "}
         as a{" "}
-        <strong style={{ color: secondary }}>Wallet Funding and Software Developer respectively</strong>.
+        <strong style={{ color: secondary }}>
+          Wallet Funding Officer and Software Developer respectively
+        </strong>
+        .
       </Text>
       <Text>
         I enjoy creating scalable & elegant web/mobile applications that have a

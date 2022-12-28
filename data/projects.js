@@ -32,7 +32,7 @@ const projects = [
     description:
       "A app that acepts registrations and list out all registered members",
     pic: "/populationcensus.png",
-    tech: ["Django", "Python", "Html.js", "Css"],
+    tech: ["Django", "Python", "Html", "Css"],
     links: [
       {
         label: "Github",
@@ -57,8 +57,7 @@ const projects = [
   },
   {
     name: "Slack Clone",
-    description:
-      "A cloned version of slack application for android and ios",
+    description: "A cloned version of slack application for android and ios",
     pic: "/slackclone.png",
     tech: ["React Native", "React", "Css"],
     links: [
