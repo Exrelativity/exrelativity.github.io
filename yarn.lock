@@ -3559,6 +3559,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"babel-plugin-transform-define@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "babel-plugin-transform-define@npm:2.1.0"
+  dependencies:
+    lodash: ^4.17.11
+    traverse: 0.6.6
+  checksum: 2afb5f10657e9f16017645e94868f0dc1e9c051e685549cf0ead6f6b277e425aa4aded09b8bb4b7edaa4c27c084f622395467fcff4f090dab5251bf2838cf82d
+  languageName: node
+  linkType: hard
+
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
   resolution: "balanced-match@npm:1.0.2"
@@ -3903,9 +3913,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001283, caniuse-lite@npm:^1.0.30001317":
-  version: 1.0.30001332
-  resolution: "caniuse-lite@npm:1.0.30001332"
-  checksum: e54182ea42ab3d2ff1440f9a6480292f7ab23c00c188df7ad65586312e4da567e8bedd5cb5fb8f0ff4193dc027a54e17e0b3c0b6db5d5a3fb61c7726ff9c45b3
+  version: 1.0.30001441
+  resolution: "caniuse-lite@npm:1.0.30001441"
+  checksum: 0f5aa8f7ea4d165e88e0d1eaa44564c5bfee66641f265a1fd959e74f0a7e6bc0207db6c28e2fb63dc8b2cd23e0e3cee06c4f372de11c93c57ff5ff4207962c3f
   languageName: node
   linkType: hard
 
@@ -4051,6 +4061,7 @@ __metadata:
     "@material-ui/core": ^4.11.4
     "@material-ui/lab": ^4.0.0-alpha.58
     async: 3.2.3
+    babel-plugin-transform-define: ^2.1.0
     eslint: ^7.19.0
     eslint-config-airbnb: ^18.2.1
     eslint-config-prettier: ^7.2.0
@@ -6895,7 +6906,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.15, lodash@npm:^4.17.20":
+"lodash@npm:^4.17.11, lodash@npm:^4.17.15, lodash@npm:^4.17.20":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -9588,6 +9599,13 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 96d4ed46bc161db75dbf9247a236ea0bfcaf5758baae6749e92afab0bc5a09cb59af21788ede7e55080f2bf02dce3e4a8f2a484cc45164e29f4b5e68f7cbcc1a
+  languageName: node
+  linkType: hard
+
+"traverse@npm:0.6.6":
+  version: 0.6.6
+  resolution: "traverse@npm:0.6.6"
+  checksum: e2afa72f11efa9ba31ed763d2d9d2aa244612f22015d16c0ea3ba5f6ca8bf071de87f8108b721885cce06ea4a36ef4605d9228c67e431d9015ea4685cb364420
   languageName: node
   linkType: hard
 

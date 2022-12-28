@@ -8,7 +8,8 @@
     "start": "next start",
     "prettier": "prettier . --write",
     "lint": "eslint . --fix",
-    "format": "prettier . --write && eslint . --fix"
+    "format": "prettier . --write && eslint . --fix",
+    "deploy": "next build && next export && git add out/ && git commit -m \"Deploy gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.5",
@@ -35,6 +36,7 @@
     "webpack": "4.46.0"
   },
   "devDependencies": {
+    "babel-plugin-transform-define": "^2.1.0",
     "eslint": "^7.19.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.22.1",

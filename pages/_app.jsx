@@ -13,7 +13,10 @@ import theme from "../theme";
 const SiteHead = ({ title }) => (
   <Head>
     <title>{title}</title>
-    <meta name="title" content="Ukweh Chimaizu Everest - Full Stack Developer" />
+    <meta
+      name="title"
+      content="Ukweh Chimaizu Everest - Full Stack Software Developer"
+    />
     <meta name="description" content="Ukweh Chimaizu Everest - Portfolio" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" href="/logo192.png" />

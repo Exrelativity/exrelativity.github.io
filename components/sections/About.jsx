@@ -28,8 +28,8 @@ const Bio = ({ secondary }) => (
         <strong style={{ color: secondary }}>
           Tutor & Software Developer (Intern)
         </strong>{" "}
-        where I have taught many client/students how to program. Prior to that, I
-        was at{" "}
+        where I have taught many client/students how to program. Prior to that,
+        I was at{" "}
         <Link href="https://www.rechargeandgetpaid.com" isExternal>
           Recharge And Get Paid
         </Link>{" "}
