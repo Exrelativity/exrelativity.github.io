@@ -1,5 +1,19 @@
 const projects = [
   {
+    name: "Aluminum Super Stores",
+    description:
+      "An Eccommerce application for displaying building materials for sale.",
+    pic: "/aluminumsuperstores.png",
+    tech: ["PHP", "MySql"],
+    links: [
+      {
+        label: "Website",
+        icon: "link",
+        url: "http://aluminumsuperstores.com.ng",
+      },
+    ],
+  },
+  {
     name: "React Admin Dashboard",
     description:
       "A template showing basic feature required for an administrator dashboard",
@@ -31,7 +45,7 @@ const projects = [
     name: "Population Census Application",
     description:
       "A app that acepts registrations and list out all registered members",
-    pic: "/populationcensus.png",
+    pic: "/populationcensus.jpeg",
     tech: ["Django", "Python", "Html", "Css"],
     links: [
       {
@@ -54,20 +68,7 @@ const projects = [
         url: "https://github.com/Exrelativity/apitest.git",
       },
     ],
-  },
-  {
-    name: "Slack Clone",
-    description: "A cloned version of slack application for android and ios",
-    pic: "/slackclone.png",
-    tech: ["React Native", "React", "Css"],
-    links: [
-      {
-        label: "Github",
-        icon: "github",
-        url: "https://github.com/Exrelativity/slack-clone-react-native.git",
-      },
-    ],
-  },
+  }
 ];
 
 export const extraProjects = [

@@ -1,5 +1,16 @@
 const jobs = [
   {
+    workplace: "Aluminum Super Stores",
+    position: "Backend Developer",
+    duration: ["December 2022 - January 2023"],
+    description: [
+      "Wrote server side scripts and logics required to route pages for user interface. ",
+      "Wrote scripts for handling data queries to and from the database using mysql on php, including the design of the of data required for the proper working of application and buisiness choice.",
+      "Wrote scripts for authentication logics and application security.", 
+    ],
+    url: "http://aluminumsuperstores.com.ng",
+  },
+  {
     workplace: "El-Academy Organisation",
     position: "Tutor and Software Developer (intern)",
     duration: ["Febuary 2022 - Present"],
@@ -27,7 +38,7 @@ const jobs = [
   {
     workplace: "Walker.ng",
     position: "Software Developer",
-    duration: [" "],
+    duration: ["Septemer 2014 - Present"],
     description: [
       "Handled the design, creation and implementation of walker.ng",
       "Used laravel a php framework for fullstack application developement to implement a RESTful APIs as a backend for walker platform.",
