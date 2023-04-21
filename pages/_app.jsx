@@ -8,6 +8,7 @@ import React from "react";
 
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
+import AnimatedCursor from "../lib";
 import theme from "../theme";
 
 const SiteHead = ({ title }) => (
@@ -60,10 +61,25 @@ const SiteHead = ({ title }) => (
 );
 
 const PageWrapper = ({ children, title }) => (
-  <div className="container">
+  <div className="container, App">
     <SiteHead title={title} />
     <NavBar />
     <main className="main">{children}</main>
+    <AnimatedCursor
+      // color="255,255,255"
+      innerSize={12}
+      outerSize={35}
+      innerScale={1}
+      outerScale={1.7}
+      outerAlpha={0}
+      hasBlendMode
+      outerStyle={{
+        border: "3px solid var(--cursor-color)",
+      }}
+      innerStyle={{
+        backgroundColor: "var(--cursor-color)",
+      }}
+    />
     <Footer />
   </div>
 );

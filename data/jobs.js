@@ -1,5 +1,16 @@
 const jobs = [
   {
+    workplace: "Amabills Technology",
+    position: "Backend Developer",
+    duration: ["March 2023 - Present"],
+    description: [
+      "Developing apis for graphql endpoint, using laravel(PHP Framework), lighthouse. ",
+      "Ensuring data is managed efficiently for better performance and relationship in with regards to backend and database.",
+      "Documenting created api on postman", 
+    ],
+    url: "http://www.amabillstechnologies.com",
+  },
+  {
     workplace: "Aluminum Super Stores",
     position: "Backend Developer",
     duration: ["December 2022 - January 2023"],
@@ -38,7 +49,7 @@ const jobs = [
   {
     workplace: "Walker.ng",
     position: "Software Developer",
-    duration: ["Septemer 2014 - Present"],
+    duration: ["Septemer 2019 - April 2023"],
     description: [
       "Handled the design, creation and implementation of walker.ng",
       "Used laravel a php framework for fullstack application developement to implement a RESTful APIs as a backend for walker platform.",

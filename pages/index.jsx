@@ -1,3 +1,6 @@
+/* eslint-disable no-plusplus */
+/* eslint-disable no-console */
+/* eslint-disable no-use-before-define */
 import React from "react";
 
 import About from "../components/sections/About";
