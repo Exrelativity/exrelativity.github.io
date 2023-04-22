@@ -31,7 +31,6 @@ const LinkIcon = ({ index, color, onHoverColor, url, label, icon }) => (
       display="inline-block"
       href={url}
       isExternal
-      className="cursor-hover-item"
     >
       <Icon
         as={icons[icon]}
