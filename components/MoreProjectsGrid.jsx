@@ -43,7 +43,7 @@ const DisplayBar = ({ showGridView, setShowGridView }) => (
         aria-label="Display List View"
         icon={<FaListUl />}
         isActive={!showGridView}
-        onClick={() => setShowGridView(true)}
+        onClick={() => setShowGridView(false)}
       />
     </Tooltip>
     <Tooltip label="Grid View">
@@ -51,7 +51,7 @@ const DisplayBar = ({ showGridView, setShowGridView }) => (
         aria-label="Display Grid View"
         icon={<BsGridFill />}
         isActive={showGridView}
-        onClick={() => setShowGridView(false)}
+        onClick={() => setShowGridView(true)}
       />
     </Tooltip>
   </Stack>
@@ -166,6 +166,23 @@ const ProjectTable = ({ projs }) => (
   </Fade>
 );
 
+function ProjectMiniCard({ projects }) {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        width: "75%",
+        overflowX: "scroll",
+      }}
+    >
+      {projects.map((project) => (
+        <ProjectCard key={project.name} {...project} />
+      ))}
+    </div>
+  );
+}
 export default function MoreProjectsGrid() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [showGridView, setShowGridView] = useState(true);
@@ -189,20 +206,9 @@ export default function MoreProjectsGrid() {
           style={{ display: "flex", justifyContent: "center" }}
         >
           {showGridView ? (
-            <ProjectTable projs={projects} />
+            <ProjectMiniCard projects={projects} />
           ) : (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                width: "75%",
-              }}
-            >
-              {projects.map((project) => (
-                <ProjectCard key={project.name} {...project} />
-              ))}
-            </div>
+            <ProjectTable projs={projects} />
           )}
         </Grid>
       </Flex>
