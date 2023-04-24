@@ -57,7 +57,7 @@ const Logo = () => {
 };
 
 const MenuToggle = ({ isOpen, onOpen }) => (
-  <Box display={{ base: "block", md: "none" }} pr={4}>
+  <Box display={{ base: "block", md: "none" }} pr={4} style={{ zIndex: "100" }}>
     <Button onClick={onOpen}>
       {isOpen ? <CloseIcon /> : <HamburgerIcon />}
     </Button>
@@ -151,7 +151,7 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Sticky enabled innerZ={99}>
+    <Sticky enabled innerZ={99} style={{ position: "sticky", zIndex: "100" }}>
       <Stack
         as="header"
         w="100%"
