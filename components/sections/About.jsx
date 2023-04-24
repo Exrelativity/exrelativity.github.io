@@ -16,36 +16,49 @@ import SectionContainer from "../SectionContainer";
 const Bio = ({ secondary }) => (
   <GridItem>
     <VStack m="auto" w="75%" spacing="12px" pt="5%">
-      <Text>
-        Hi, I&apos;m Everest Ukweh! a graduate of the Federal University of
-        Technology, Owerri where I studied Environmental Technology, But I
-        ventured into programming as a result of my passion and convictions for
-        it. I&apos;m currently working at{" "}
+      <Text style={{ textAlign: "center" }}>
+        Have over 4 years of experience. A graduate of the Federal University of
+        Technology where he studied Environmental Technology, He ventured into
+        software programming as a result of owns passion and convictions.
+        Currently, He is working at Amabills Technology, as a{" "}
+        <strong style={{ color: secondary }}>Backend Software Engineer</strong>,{" "}
+        Prior to that, He was at{" "}
         <Link href="https://www.elacademy.org.ng/" isExternal>
           El-Academy
         </Link>{" "}
         as a{" "}
         <strong style={{ color: secondary }}>
-          Tutor & Software Developer (Intern)
+          programing Tutor and Software Developer (Intern)
         </strong>{" "}
-        where I have taught many client/students how to program. Prior to that,
-        I was at{" "}
+        where he taught many clients/students programming. Other experiences
+        include working at{" "}
         <Link href="https://www.rechargeandgetpaid.com" isExternal>
           Recharge And Get Paid
         </Link>{" "}
-        &{"  "}
+        as a{" "}
+        <strong style={{ color: secondary }}>Wallet Funding Officer</strong> and
+        at{" "}
         <Link href="https://walker.ng/" isExternal>
           Walker.ng
         </Link>{" "}
-        as a{" "}
-        <strong style={{ color: secondary }}>
-          Wallet Funding Officer and Software Developer respectively
-        </strong>
-        .
-      </Text>
-      <Text>
-        I enjoy creating scalable & elegant web/mobile applications that have a
-        real world impact. I&apos;m always learning new technologies
+        as <strong style={{ color: secondary }}>Software Engineer</strong>.{" "}
+        Strong skills are in{" "}
+        <strong style={{ color: secondary }}>Python</strong>,{" "}
+        <strong style={{ color: secondary }}>Php</strong>,{" "}
+        <strong style={{ color: secondary }}>Laravel</strong>,{" "}
+        <strong style={{ color: secondary }}>React</strong>,{" "}
+        <strong style={{ color: secondary }}>Graphql</strong>,{" "}
+        <strong style={{ color: secondary }}>Excel</strong>,{" "}
+        <strong style={{ color: secondary }}>JavaScript</strong>,{" "}
+        <strong style={{ color: secondary }}>Node.js</strong>,{" "}
+        <strong style={{ color: secondary }}>MongoDB</strong>,{" "}
+        <strong style={{ color: secondary }}>Html</strong>,{" "}
+        <strong style={{ color: secondary }}>Express.js</strong>,{" "}
+        <strong style={{ color: secondary }}>Nest.js</strong>,{" "}
+        <strong style={{ color: secondary }}>MySQL</strong>,{" "}
+        <strong style={{ color: secondary }}>Laravel</strong>,{" "}
+        <strong style={{ color: secondary }}>Css</strong>,{" "}
+        <strong style={{ color: secondary }}>Django</strong>, etc.
       </Text>
     </VStack>
   </GridItem>

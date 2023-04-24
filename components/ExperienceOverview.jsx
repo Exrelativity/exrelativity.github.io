@@ -28,17 +28,21 @@ const ExperienceSelect = ({ expIndex, setIndex }) => (
 
 const ExperienceButtons = ({ expIndex, setIndex }) => (
   <Grid
-    container
     item
     spacing={2}
-    justifyContent="center"
-    style={{ margin: "auto" }}
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "flex-start",
+      width: "100%",
+      margin: "auto",
+    }}
   >
     {jobs.map((job, index) => (
-      <Grid container item key={`${job.workplace}-btn`}>
+      <Grid item key={`${job.workplace}-btn`}>
         <Button
           isActive={expIndex === index}
-          isFullWidth
+          style={{ width: "inherit", marginTop: "4px" }}
           onClick={() => setIndex(index)}
         >
           {job.workplace}
@@ -55,8 +59,8 @@ const ExperienceDetails = ({ index }) => {
     colors.secondary.dark
   );
   return (
-    <Grid container item direction="column">
-      <Grid container item style={{ margin: "12px" }}>
+    <Grid item style={{ display: "flex", flexDirection: "column" }}>
+      <Grid item style={{ margin: "12px" }}>
         <Heading as="h1" size="md">
           {job.position} @{" "}
           <Link href={job.url} isExternal color={secondary}>
@@ -64,14 +68,14 @@ const ExperienceDetails = ({ index }) => {
           </Link>
         </Heading>
       </Grid>
-      <Grid container item style={{ marginLeft: "12px" }}>
+      <Grid item style={{ marginLeft: "12px" }}>
         {job.duration.map((duration) => (
-          <Grid key={duration} container item>
+          <Grid key={duration} item>
             <Text mt={2}>{duration}</Text>
           </Grid>
         ))}
       </Grid>
-      <Grid container item style={{ marginLeft: "12px", marginBottom: "12px" }}>
+      <Grid item style={{ marginLeft: "12px", marginBottom: "12px" }}>
         <UnorderedList mt={2}>
           {job.description.map((desc) => (
             <ListItem key={desc}>{desc}</ListItem>
@@ -92,32 +96,34 @@ export default function ExperienceOverview() {
   return (
     <Flex
       as={Grid}
-      container
       item
-      direction="row"
-      justifyContent="center"
       xs={9}
       sm={9}
       borderRadius="lg"
       borderWidth={bg === colors.bg.light ? "1px" : ""}
       rounded="md"
       style={{
+        flexDirection: "row",
         margin: "24px",
         marginTop: "3vh",
-        width: "75vw",
+        width: "80%",
         height: "60vh",
+        justifyContent: "space-evenly",
       }}
     >
       <Grid
-        container
-        direction="column"
         item
         xs={9}
         sm={6}
         md={2}
-        alignItems="center"
-        justifyContent="flex-start"
-        style={{ marginTop: "24px", marginBottom: "24px", marginRight: "3vw" }}
+        style={{
+          display: "flex",
+          alignItems: "flex-start",
+          justifyContent: "space-evenly",
+          marginTop: "24px",
+          marginBottom: "24px",
+          marginRight: "3vw",
+        }}
       >
         {showSelect ? (
           <ExperienceButtons expIndex={index} setIndex={setIndex} />
@@ -126,7 +132,6 @@ export default function ExperienceOverview() {
         )}
       </Grid>
       <Grid
-        container
         item
         xs={9}
         sm={6}

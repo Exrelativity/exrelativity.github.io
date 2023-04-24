@@ -6,7 +6,7 @@ const jobs = [
     description: [
       "Developing apis for graphql endpoint, using laravel(PHP Framework), lighthouse. ",
       "Ensuring data is managed efficiently for better performance and relationship in with regards to backend and database.",
-      "Documenting created api on postman", 
+      "Documenting created api on postman",
     ],
     url: "http://www.amabillstechnologies.com",
   },
@@ -17,14 +17,14 @@ const jobs = [
     description: [
       "Wrote server side scripts and logics required to route pages for user interface. ",
       "Wrote scripts for handling data queries to and from the database using mysql on php, including the design of the of data required for the proper working of application and buisiness choice.",
-      "Wrote scripts for authentication logics and application security.", 
+      "Wrote scripts for authentication logics and application security.",
     ],
     url: "http://aluminumsuperstores.com.ng",
   },
   {
     workplace: "El-Academy Organisation",
     position: "Tutor and Software Developer (intern)",
-    duration: ["Febuary 2022 - Present"],
+    duration: ["Febuary 2022 - Febuary 2023"],
     description: [
       "Taught students/clients courses in programing such as python and php, thereby, equiping them with relevant knowledge and skills required for programing in their choice of language within a span of three months.",
       "Taught students/clients courses in CyberSecurity and Networking, thereby, equiping them with relevant skills and knowledge required for CyberSecurity and Networking.",

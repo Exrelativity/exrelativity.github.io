@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../animationEffect/animation.css";
 
 import { ChakraProvider } from "@chakra-ui/react";
 import Head from "next/head";
@@ -6,9 +7,9 @@ import { useRouter } from "next/router";
 import Script from "next/script";
 import React from "react";
 
+import AnimatedCursor from "../animationEffect";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import AnimatedCursor from "../lib";
 import theme from "../theme";
 
 const SiteHead = ({ title }) => (
@@ -61,10 +62,13 @@ const SiteHead = ({ title }) => (
 );
 
 const PageWrapper = ({ children, title }) => (
-  <div className="container, App">
-    <SiteHead title={title} />
-    <NavBar />
-    <main className="main">{children}</main>
+  <>
+    <div className="container">
+      <SiteHead title={title} />
+      <NavBar />
+      <main className="main">{children}</main>
+      <Footer />
+    </div>
     <AnimatedCursor
       // color="255,255,255"
       innerSize={12}
@@ -80,8 +84,7 @@ const PageWrapper = ({ children, title }) => (
         backgroundColor: "var(--cursor-color)",
       }}
     />
-    <Footer />
-  </div>
+  </>
 );
 
 function App({ Component, pageProps }) {

@@ -68,7 +68,7 @@ const projects = [
         url: "https://github.com/Exrelativity/apitest.git",
       },
     ],
-  }
+  },
 ];
 
 export const extraProjects = [

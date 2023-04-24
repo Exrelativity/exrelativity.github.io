@@ -5,7 +5,7 @@ import React from "react";
 const Tech = ({ tech, techMr }) => (
   <>
     {tech.map((item, index) => (
-      <Grid item key={`${item}-${index}`}>
+      <Grid item key={`${item}-${index}`} style={{ marginRight: "5px" }}>
         <Text as="kbd" mr={techMr}>
           {item}
         </Text>

@@ -38,19 +38,19 @@ const DisplayBar = ({ showGridView, setShowGridView }) => (
     mb={10}
     float="right"
   >
-    <Tooltip label="Grid View">
-      <IconButton
-        aria-label="Display Grid View"
-        icon={<BsGridFill />}
-        isActive={showGridView}
-        onClick={() => setShowGridView(true)}
-      />
-    </Tooltip>
     <Tooltip label="List View">
       <IconButton
         aria-label="Display List View"
         icon={<FaListUl />}
         isActive={!showGridView}
+        onClick={() => setShowGridView(true)}
+      />
+    </Tooltip>
+    <Tooltip label="Grid View">
+      <IconButton
+        aria-label="Display Grid View"
+        icon={<BsGridFill />}
+        isActive={showGridView}
         onClick={() => setShowGridView(false)}
       />
     </Tooltip>
@@ -66,7 +66,6 @@ const ProjectCard = ({ name, description, links, tech }) => {
   return (
     <Box
       as={Grid}
-      container
       item
       xs={9}
       sm={6}
@@ -74,14 +73,20 @@ const ProjectCard = ({ name, description, links, tech }) => {
       bgColor={bg}
       borderRadius="lg"
       borderWidth={bg === colors.bg.light ? "1px" : ""}
-      direction="column"
       rounded="md"
       shadow="lg"
       textAlign="start"
-      style={{ margin: "24px" }}
+      style={{ margin: "24px", flexDirection: "column" }}
     >
-      <Grid container item direction="row">
-        <Grid container item xs={6}>
+      <Grid
+        item
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-between",
+        }}
+      >
+        <Grid item xs={6}>
           <Icon
             as={HiCode}
             boxSize="3em"
@@ -90,26 +95,29 @@ const ProjectCard = ({ name, description, links, tech }) => {
             marginLeft="10px"
           />
         </Grid>
-        <Grid container item xs={6} justifyContent="flex-end">
+        <Grid item xs={6} style={{ float: "left" }}>
           <LinkIconBar links={links} mr="24px" />
         </Grid>
       </Grid>
-      <Grid container item direction="row" style={{ marginTop: "-24px" }}>
+      <Grid item style={{ display: "flex", marginTop: "-24px" }}>
         <Heading as="h1" size="md" m={2} p={1} pt={6}>
           {name}
         </Heading>
       </Grid>
-      <Grid container item direction="row">
+      <Grid item style={{ display: "flex" }}>
         <Text fontSize="md" m={2} p={1}>
           {description}
         </Text>
       </Grid>
       <Grid
-        container
         item
-        direction="row"
-        justifyContent="space-evenly"
-        style={{ marginBottom: "12px" }}
+        style={{
+          display: "flex",
+          marginBottom: "12px",
+          padding: "12px",
+          flexDirection: "column",
+          justifyContent: "space-evenly",
+        }}
       >
         <Tech tech={tech} />
       </Grid>
@@ -123,12 +131,12 @@ const ProjectRow = ({ name, type, description, tech, links }) => (
     <Td>{type}</Td>
     <Td>{description}</Td>
     <Td>
-      <Grid container item direction="row">
+      <Grid item style={{ flexDirection: "row" }}>
         <Tech tech={tech} techMr={2} />
       </Grid>
     </Td>
     <Td>
-      <Grid container>
+      <Grid>
         <LinkIconBar links={links} />
       </Grid>
     </Td>
@@ -173,13 +181,28 @@ export default function MoreProjectsGrid() {
         />
       </Flex>
       <Flex justifyContent="center" w="100vw">
-        <Grid container item xs={12} sm={9} md={9} justifyContent="center">
+        <Grid
+          item
+          xs={12}
+          sm={9}
+          md={9}
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           {showGridView ? (
-            projects.map((project) => (
-              <ProjectCard key={project.name} {...project} />
-            ))
-          ) : (
             <ProjectTable projs={projects} />
+          ) : (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                width: "75%",
+              }}
+            >
+              {projects.map((project) => (
+                <ProjectCard key={project.name} {...project} />
+              ))}
+            </div>
           )}
         </Grid>
       </Flex>

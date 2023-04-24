@@ -28,10 +28,12 @@ import IsDevice from "./IsDevice";
  *
  */
 function CursorCore({
+  animationKeyFrameInner = "rainbow-bg-inner",
+  animationKeyFrameOuter = "rainbow-bg-outer",
   outerStyle,
   innerStyle,
-  color = "220, 90, 95",
-  outerAlpha = 0.3,
+  // color = "220, 90, 95",
+  // outerAlpha = 0.3,
   innerSize = 8,
   outerSize = 8,
   outerScale = 6,
@@ -202,7 +204,9 @@ function CursorCore({
       width: innerSize,
       height: innerSize,
       pointerEvents: "none",
-      backgroundColor: `rgba(${color}, 1)`,
+      animation: `${animationKeyFrameInner} 2.5s linear`,
+      animationIterationCount: "infinite",
+      // backgroundColor: `rgba(${color}, 1)`,
       ...(innerStyle && innerStyle),
       transition: "opacity 0.15s ease-in-out, transform 0.25s ease-in-out",
     },
@@ -214,7 +218,9 @@ function CursorCore({
       pointerEvents: "none",
       width: outerSize,
       height: outerSize,
-      backgroundColor: `rgba(${color}, ${outerAlpha})`,
+      animation: `${animationKeyFrameOuter} 2.5s linear`,
+      animationIterationCount: "infinite",
+      // backgroundColor: `rgba(${color}, ${outerAlpha})`,
       transition: "opacity 0.15s ease-in-out, transform 0.15s ease-in-out",
       willChange: "transform",
       ...(outerStyle && outerStyle),
@@ -226,12 +232,12 @@ function CursorCore({
       <div
         ref={cursorOuterRef}
         style={styles.cursorOuter}
-        className="rainbow-bg"
+        // className="rainbow-bg"
       />
       <div
         ref={cursorInnerRef}
         style={styles.cursorInner}
-        className="rainbow-bg"
+        // className="rainbow-bg"
       />
     </>
   );

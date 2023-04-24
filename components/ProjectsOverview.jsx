@@ -64,7 +64,14 @@ const ProjectContent = ({
           description={description}
           links={links}
         />
-        <Grid container direction="row" justifyContent="center" spacing={2}>
+        <Grid
+          style={{
+            flexDirection: "row",
+            display: "flex",
+            justifyContent: "center",
+          }}
+          spacing={2}
+        >
           <Tech tech={tech} />
         </Grid>
       </>
@@ -87,14 +94,14 @@ const ProjectContent = ({
 
 const Project = ({ index, shouldAlternate, ...props }) => (
   <Fade>
-    <Grid container direction="row" style={{ height: "70vh" }}>
-      <Grid container item xs={12} sm={6}>
+    <Grid style={{ flexDirection: "row", display: "flex", height: "70vh" }}>
+      <Grid item xs={12} sm={6}>
         <ProjectContent
           alternate={shouldAlternate ? index % 2 === 0 : false}
           {...props}
         />
       </Grid>
-      <Grid container item xs={12} sm={6}>
+      <Grid item xs={12} sm={6}>
         <ProjectContent
           alternate={shouldAlternate ? index % 2 === 1 : true}
           {...props}
@@ -108,7 +115,7 @@ export default function ProjectsOverview() {
   const shouldAlternate = useBreakpointValue({ base: false, md: true });
   return (
     <Flex pt={12}>
-      <Grid container direction="column" justifyContent="center">
+      <Grid style={{ flexDirection: "column", justifyContent: "center" }}>
         {projects.map((project, index) => (
           <Project
             key={project.name}

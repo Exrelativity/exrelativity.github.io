@@ -1,9 +1,9 @@
-:root {
+/* :root {
   --color-cursor: 220, 90, 90;
   --cursor-outline-shade: 0.3;
   --cursor-size: 10px;
   --cursor-outline-size: 12px;
-}
+} */
 html,
 body {
   overflow-x: hidden;
@@ -11,7 +11,6 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  /* cursor: none; */
 }
 
 a {
@@ -44,92 +43,11 @@ a {
   padding: 0;
 }
 
-
-.rainbow-bg{
-  animation: rainbow-bg 2.5s linear;
-  animation-iteration-count: infinite;
-}
-
-.rainbow{
-  animation: rainbow 2.5s linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes rainbow-bg{
-  100%,0%{
-    background-color: rgb(255,0,0);
-  }
-  8%{
-    background-color: rgb(255,127,0);
-  }
-  16%{
-    background-color: rgb(255,255,0);
-  }
-  25%{
-    background-color: rgb(127,255,0);
-  }
-  33%{
-    background-color: rgb(0,255,0);
-  }
-  41%{
-    background-color: rgb(0,255,127);
-  }
-  50%{
-    background-color: rgb(0,255,255);
-  }
-  58%{
-    background-color: rgb(0,127,255);
-  }
-  66%{
-    background-color: rgb(0,0,255);
-  }
-  75%{
-    background-color: rgb(127,0,255);
-  }
-  83%{
-    background-color: rgb(255,0,255);
-  }
-  91%{
-    background-color: rgb(255,0,127);
-  }
-}
-
-@keyframes rainbow{
-  100%,0%{
-    color: rgb(255,0,0);
-  }
-  8%{
-    color: rgb(255,127,0);
-  }
-  16%{
-    color: rgb(255,255,0);
-  }
-  25%{
-    color: rgb(127,255,0);
-  }
-  33%{
-    color: rgb(0,255,0);
-  }
-  41%{
-    color: rgb(0,255,127);
-  }
-  50%{
-    color: rgb(0,255,255);
-  }
-  58%{
-    color: rgb(0,127,255);
-  }
-  66%{
-    color: rgb(0,0,255);
-  }
-  75%{
-    color: rgb(127,0,255);
-  }
-  83%{
-    color: rgb(255,0,255);
-  }
-  91%{
-    color: rgb(255,0,127);
-  }
-}
-
+/* .container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */

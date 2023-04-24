@@ -25,15 +25,15 @@ export default function Footer() {
   return (
     <Box as="footer" mt={12} height="100%" textAlign="center" className="app">
       <Link href={GITHUB_URL} isExternal>
-        <Text fontSize="sm">
-          Made with{" "}
-          <span aria-label="heart" role="img">
-            &#128153;
-          </span>
-          {" (and React) by Ukweh Chimaizu Everest"}
-        </Text>
+        <Text fontSize="sm">Made with Next.js and React</Text>
       </Link>
-      <Stack direction="row" alignItems="center" justify="center">
+      <Stack
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <GoRepoForked /> <Text size="xs">{forks}</Text>
         <GoStar /> <Text size="xs">{stars}</Text>
       </Stack>

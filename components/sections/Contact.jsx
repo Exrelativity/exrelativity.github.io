@@ -25,10 +25,10 @@ export default function Contact() {
         pr={4}
       >
         <Text fontSize="xl" m="auto" mt={6}>
-          Whether it&apos;s a job opportunity, an invite to coffee,
+          Either it&apos;s a job opportunity, an invite to coffee,
         </Text>
         <Text fontSize="xl" m="auto">
-          or feedback on my portfolio, my inbox is open!
+          or feedback on my portfolio, my inbox is open. Thanks!
         </Text>
         <Button
           as={Link}

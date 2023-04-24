@@ -155,9 +155,11 @@ export default function Navbar() {
       <Stack
         as="header"
         w="100%"
-        direction={["row", "row", "row", "row"]}
-        alignItems="center"
-        justifyContent="center"
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
         bg={primary}
       >
         <Logo />
