@@ -30,6 +30,7 @@ const ExperienceButtons = ({ expIndex, setIndex }) => (
   <Grid
     item
     spacing={2}
+    container
     style={{
       display: "flex",
       flexDirection: "column",
@@ -102,6 +103,7 @@ export default function ExperienceOverview() {
       borderRadius="lg"
       borderWidth={bg === colors.bg.light ? "1px" : ""}
       rounded="md"
+      container
       style={{
         flexDirection: "row",
         margin: "24px",

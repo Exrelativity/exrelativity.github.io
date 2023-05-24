@@ -155,6 +155,7 @@ export default function Navbar() {
       <Stack
         as="header"
         w="100%"
+        container
         style={{
           flexDirection: "row",
           alignItems: "center",

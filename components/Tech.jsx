@@ -1,17 +1,33 @@
-import { Text } from "@chakra-ui/react";
-import { Grid } from "@material-ui/core";
 import React from "react";
 
-const Tech = ({ tech, techMr }) => (
-  <>
+const Tech = ({ tech }) => (
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "row",
+      flexWrap: "wrap",
+      marginRight: "5px",
+      marginLeft: "5px",
+      justifySelf: "center",
+      alignSelf: "center",
+      width: "auto",
+    }}
+  >
     {tech.map((item, index) => (
-      <Grid item key={`${item}-${index}`} style={{ marginRight: "5px" }}>
-        <Text as="kbd" mr={techMr}>
-          {item}
-        </Text>
-      </Grid>
+      <div
+        key={`${item}-${index}`}
+        style={{
+          marginRight: "5px",
+          marginLeft: "5px",
+          justifySelf: "flex-end",
+          alignSelf: "center",
+          width: "auto",
+        }}
+      >
+        {item}
+      </div>
     ))}
-  </>
+  </div>
 );
 
 export default Tech;

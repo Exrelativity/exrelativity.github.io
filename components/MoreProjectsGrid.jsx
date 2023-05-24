@@ -76,6 +76,7 @@ const ProjectCard = ({ name, description, links, tech }) => {
       rounded="md"
       shadow="lg"
       textAlign="start"
+      container
       style={{ margin: "24px", flexDirection: "column" }}
     >
       <Grid
@@ -110,6 +111,7 @@ const ProjectCard = ({ name, description, links, tech }) => {
         </Text>
       </Grid>
       <Grid
+        container
         item
         style={{
           display: "flex",

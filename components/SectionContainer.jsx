@@ -15,7 +15,7 @@ export default function SectionContainer({
   return (
     <div className={styles.container} {...props}>
       <Fade>
-        <div className={styles.column}>
+        <div className={styles.column} style={{ alignItem: "center" }}>
           <Text
             as="h1"
             color={color}

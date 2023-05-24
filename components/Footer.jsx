@@ -28,6 +28,7 @@ export default function Footer() {
         <Text fontSize="sm">Made with Next.js and React</Text>
       </Link>
       <Stack
+        container
         style={{
           flexDirection: "row",
           alignItems: "center",

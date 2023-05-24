@@ -16,7 +16,7 @@ import SectionContainer from "../SectionContainer";
 const Bio = ({ secondary }) => (
   <GridItem>
     <VStack m="auto" w="75%" spacing="12px" pt="5%">
-      <Text style={{ textAlign: "center" }}>
+      <Text style={{ textAlign: "center", fontSize: "large" }}>
         Have over 4 years of experience. A graduate of the Federal University of
         Technology where he studied Environmental Technology, He ventured into
         software programming as a result of owns passion and convictions.
@@ -69,6 +69,7 @@ const Headshot = () => (
     <Image
       m="auto"
       src="/me.jpeg"
+      style={{ borderRadius: "250px", height: "auto", maxHeight: "500px" }}
       alt="Ukweh Chimaizu Everest"
       zIndex={1}
       className="image"
