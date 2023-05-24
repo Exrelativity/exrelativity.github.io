@@ -2,7 +2,6 @@ import {
   Box,
   Flex,
   Heading,
-  Image,
   Text,
   useBreakpointValue,
   useColorModeValue,
