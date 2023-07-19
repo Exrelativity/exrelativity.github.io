@@ -18,7 +18,7 @@ function Navbar() {
       </div>
 
       <div className="block md:inline-flex">
-        <div className="flex md:hidden text-2xl ease-in-out" onClick={handleOnclick}>{currentClick ? <GrMenu /> : <GrClose />}</div>
+        <div className="flex md:hidden text-2xl ease-in-out" onClick={handleOnclick}>{currentClick ? <GrClose /> : <GrMenu />}</div>
       <div className={currentClick ? "pb-1 ease-in-out md:pb-0 md:inline-flex absolute md:relative top-20 md:top-0 bg-white md:bg-inherit w-80 md:w-auto pr-10 pl-5 md:pr-5 md:pl-5 right-0 md:right-auto rounded-b-md md:rounded-b-none": "hidden ease-in-out md:inline-flex"}>
       <div className="hover:text-lg p-1 pb-1 md:pr-4 md:pb-0">
         <a href="#about"> About </a>
