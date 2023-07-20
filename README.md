@@ -16,7 +16,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `src/app/page.js`. The page auto-updates as you edit the file.## 🚀 Portfolio V4.0
 
-This portfolio has been re-designed with responsiveness, accessibility, and cleaner code in mind using Chakra-UI.
+This portfolio has been re-designed with responsiveness, accessibility, and cleaner code in mind using Tailwind.
 See the previous portfolio on prevmain branch [here](https://github.com/exrelativity/exrelativity.github.io.git)
 
 Changes:
@@ -28,6 +28,8 @@ Changes:
 Removed:
 
 - Sticky sidebar
+- chakra
+- boostrap
 - Skills- Dark mode
 - Progressive Web App (PWA)
 - Eslint + CI checks
