@@ -17,7 +17,8 @@ function About() {
         <div className="w-full">
           <picture>
             <img
-              className="rounded-3xl m-auto"
+              className="rounded-tl-3xl rounded-br-3xl m-auto border-t-2 border-l-4 border-b-0 border-r-8 border-white"
+              style={{borderBottomRightRadius:"30%", borderTopLeftRadius: "30%"}}
               src="/me.jpeg"
               alt="Ukweh Chima Everest"
               onClick={() => {
