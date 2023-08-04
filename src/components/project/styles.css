@@ -46,6 +46,7 @@
 
 @media screen and (max-width: 860px) {
   .right-section {
+    height: unset;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -193,6 +194,7 @@
 
 @media screen and (max-width: 860px) {
   .left-section {
+    height: unset;
     flex-direction: column;
     justify-content: space-between;
   }

@@ -38,7 +38,7 @@ function Navbar() {
             <a href="#techstack">Tech. Stack</a>
           </div>
           <div className="hover:text-lg p-1 pb-1 md:pr-4 md:pb-0">
-            <a href="#exprience"> Experience </a>
+            <a href="#experience"> Experience </a>
           </div>
           <div className="hover:text-lg p-1 pb-1 md:pr-4 md:pb-0">
             <a href="#project"> Project</a>

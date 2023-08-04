@@ -10,7 +10,7 @@ function Experience() {
   //   setActiveExperience(activeExperience => [jobs[0]]);
   // }, []);
   return (
-    <div>
+    <div id="experience">
       <div className="m-auto text-center w-full text-2xl pt-16 md:pt-16  text-blue-700">
         <h1>Experience</h1>
       </div>
@@ -28,7 +28,7 @@ function Experience() {
             ))}
           </ul>
         </div>
-        <div className="flex items-start justify-start">
+        <div className="p-1 flex items-start justify-start">
           {activeExperience.map((data, index) => (
             <div className="p-1 flex flex-col whitespace-normal w-full h-full" key={index}>
               <div className="p-1 text-xl font-bold">
