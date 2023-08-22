@@ -1,11 +1,10 @@
-import About from '@/components/about'
-import Contact from '@/components/contact'
-import Experience from '@/components/experience'
-import Footer from '@/components/footer'
-import Landing from '@/components/landing'
-import Navbar from '@/components/navbar'
-import Project from '@/components/project'
-import Image from 'next/image'
+import About from "@/components/about";
+import Contact from "@/components/contact";
+import Experience from "@/components/experience";
+import Footer from "@/components/footer";
+import Landing from "@/components/landing";
+import Navbar from "@/components/navbar";
+import Project from "@/components/project";
 
 export default function Home() {
   return (
@@ -18,5 +17,5 @@ export default function Home() {
       <Contact />
       <Footer />
     </main>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 "use client";
 import "./styles.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { GrMenu } from "@react-icons/all-files/gr/GrMenu";
 import { GrClose } from "@react-icons/all-files/gr/GrClose";
 
@@ -9,8 +9,59 @@ function Navbar() {
   const handleOnclick = () => {
     setCurrentClick((currentClick) => (currentClick ? false : true));
   };
+
+  const [visitor, setVisitor] = useState("");
+  const [visitordns, setVisitordns] = useState("");
+  useEffect(() => {
+    function getinfo() {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://ip-api.com/json", true);
+      xhr.send();
+      xhr.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          var response = this.responseText;
+          setVisitor((visitor) => response);
+    
+        }
+      };
+    }
+    function getdnsinfo() {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://edns.ip-api.com/json", true);
+      xhr.send();
+      xhr.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+          var response = this.responseText;
+          setVisitordns((visitordns) => response);
+    
+        }
+      };
+    }
+    getinfo();
+    getdnsinfo();
+  }, []);
+
+  useEffect(() => {
+    if (visitor !== undefined && visitor !== "") {
+      async function sendinfo() {
+        const body = new FormData();
+        body.set("Visitor", JSON.stringify(visitor));
+        body.set("Visitordns", JSON.stringify(visitordns));
+        body.set("Date", Date().toString());
+        const resp = await fetch(
+          "https://api.sheetmonkey.io/form/ppp8akfogi1gfsBs2QqE91",
+          {
+            method: "POST",
+            body,
+          }
+        );
+      }
+      sendinfo();
+    }
+  }, [visitordns, visitor]);
+
   return (
-    <div id="top" className="navigation" style={{zIndex:1}}>
+    <div id="top" className="navigation" style={{ zIndex: 1 }}>
       <div className="logo">
         <a className="no-underline" href="#landing">
           Exrelativity

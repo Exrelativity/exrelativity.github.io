@@ -10,6 +10,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+ 
   return (
     <html lang="en">
       <head>
@@ -25,19 +26,12 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {children}
         <AnimatedCursor
-          // color="255,255,255"
           innerSize={10}
           outerSize={50}
           innerScale={1}
           outerScale={1.7}
           outerAlpha={0}
           hasBlendMode
-          //  outerStyle={{
-          //    border: "3px solid var(--cursor-color)",
-          //  }}
-          //  innerStyle={{
-          //    backgroundColor: "var(--cursor-color)",
-          //  }}
         />
       </body>
     </html>
