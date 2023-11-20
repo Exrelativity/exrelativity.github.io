@@ -10,13 +10,12 @@ function Navbar() {
     setCurrentClick((currentClick) => (currentClick ? false : true));
   };
   return (
-    <div id="top" className="navigation" style={{zIndex:1}}>
+    <div id="top" className="navigation" style={{ zIndex: 1 }} onMouseLeave={() => setCurrentClick(false)}>
       <div className="logo">
         <a className="no-underline" href="#landing">
           Exrelativity
         </a>
       </div>
-
       <div className="block md:inline-flex">
         <div
           className="flex md:hidden text-2xl ease-in-out"

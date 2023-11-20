@@ -9,17 +9,16 @@
 }
 
 .project h1 {
-  fontsize: 4em;
+  font-size: 4em;
 }
 
 .project button {
-  background-color: #0c4c91;
+  background-color: rgba(8,42,138,1);
   color: white;
   width: 180px;
-  text-align: center;
+  text-align: start;
   padding: 15px 0px 15px 0px;
   font-size: 14pt;
-  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .project .imgcover img {
@@ -33,14 +32,14 @@
 
 .right-section {
   z-index: 0;
-  background: #0c4c91;
+  background: rgb(5, 29, 95);
   width: 100%;
   height: 500px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -69,11 +68,6 @@
   }
 }
 
-@media screen and (max-width: 747px) {
-  .right-image {
-    height: 35%;
-  }
-}
 
 @media screen and (max-width: 644px) {
   .right-image img {
@@ -99,8 +93,11 @@
   .right-info {
     margin-right: 400px;
     width: 60%;
-    background: #0c4c9199;
-    /* padding: 0px 0px 0px 25px; */
+    /* background: rgb(63, 103, 215); */
+  }
+  
+  .right-info h2 {
+    text-align: start;
   }
 }
 
@@ -141,36 +138,37 @@
 
 .right-info h2 {
   color: white;
-  font-size: 40pt;
-  text-align: right;
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: start;
 }
 
 @media screen and (max-width: 860px) {
   .right-info h2 {
-    text-align: center;
+    text-align: start;
   }
 }
 
 .right-info p {
   color: white;
-  font-size: 14pt;
-  text-align: right;
+  font-size: 12pt;
+  text-align: start;
 }
 
 @media screen and (max-width: 860px) {
   .right-info p {
-    text-align: center;
+    text-align: start;
   }
 }
 
 .right-info a {
   background-color: white;
-  color: #0c4c91;
+  color: rgba(8,42,138,1);
   width: 180px;
   text-align: center;
   padding: 15px 0px 15px 0px;
   font-size: 14pt;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .right-info a:hover {
@@ -188,7 +186,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   position: relative;
 }
 
@@ -224,11 +222,6 @@
   }
 }
 
-@media screen and (max-width: 747px) {
-  .left-image {
-    height: 35%;
-  }
-}
 
 @media screen and (max-width: 644px) {
   .left-image img {
@@ -255,7 +248,6 @@
     margin-left: 400px;
     width: 60%;
     background: #ffffff99;
-    /* padding: 0px 0px 0px 25px; */
   }
 }
 
@@ -295,37 +287,37 @@
 }
 
 .left-info h2 {
-  color: #0c4c91;
-  font-size: 40pt;
-  text-align: left;
+  color: rgba(8,42,138,1);
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: start;
 }
 
 @media screen and (max-width: 860px) {
   .left-info h2 {
-    text-align: center;
+    text-align: start;
   }
 }
 
 .left-info p {
-  color: #0c4c91;
-  font-size: 14pt;
-  text-align: left;
+  color: rgba(8,42,138,1);
+  font-size: 12pt;
+  text-align: start;
 }
 
 @media screen and (max-width: 860px) {
   .left-info p {
-    text-align: center;
+    text-align: start;
   }
 }
 
 .left-info a {
-  background-color: #0c4c91;
+  background-color: rgba(8,42,138,1);
   color: white;
   width: 180px;
   text-align: center;
   padding: 15px 0px 15px 0px;
   font-size: 14pt;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .left-info a:hover {

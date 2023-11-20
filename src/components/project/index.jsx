@@ -17,25 +17,25 @@ function Project() {
       <div
         id="project"
         className="m-auto text-center w-full text-2xl mt-24 md:mt-24
-    pt-24 md:pt-24 pb-5  text-blue-700 font-bold "
+    pt-24 md:pt-24 pb-5  text-[rgba(8,42,138,1)] font-bold"
       >
         <h1>Projects</h1>
       </div>
-      <div className="w-full" style={{ zIndex: "0" }}>
+      <div className="container " style={{ zIndex: "0" }}>
         <div className="project w-full">
           {projects &&
             projects.map((data, index) => (
               <div key={index}>
                 {evaluateindex(index) ? (
                   <div className="w-full overflow-auto">
-                    <RightCard key={index} {...data} />
+                    <RightCard index={index} {...data} />
                   </div>
                 ) : (
                   <div className="w-full overflow-auto">
-                    <LeftCard key={index} {...data} />
+                    <LeftCard index={index} {...data} />
                   </div>
                 )}
-                <span className="hidden">{index}</span>
+                {/* <span className="hidden">{index}</span> */}
               </div>
             ))}
         </div>

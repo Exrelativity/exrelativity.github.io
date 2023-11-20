@@ -1,7 +1,7 @@
 "use client";
 import "./styles.css";
 import React from "react";
-import { MdEmail} from "@react-icons/all-files/md/MdEmail";
+import { MdEmail } from "@react-icons/all-files/md/MdEmail";
 
 export default function Contact() {
   return (
@@ -9,7 +9,7 @@ export default function Contact() {
       <div
         id="contact"
         name="contact"
-        className="m-auto text-center w-full text-2xl mt-24 md:mt-24 pt-24 md:pt-24 pb-5  text-blue-700 font-bold "
+        className="m-auto text-center w-full text-2xl mt-24 md:mt-24 pt-24 md:pt-24 pb-5  text-[rgba(8,42,138,1)] font-bold "
       >
         <h1>Contact</h1>
       </div>
@@ -24,9 +24,9 @@ export default function Contact() {
           <a
             href="mailto:ukweheverest@gmail.com"
             target="_blank"
-            className="m-auto mt-6 flex flex-row items-center justify-center text-xl bg-gray-500 p-3 rounded-md"
+            className="m-auto mt-6 flex flex-row items-center justify-center text-xl bg-[rgba(8,42,138,1)] text-white p-3 px-5 rounded-md gap-3"
           >
-            <MdEmail className="pr-1 text-2xl"/>
+            <MdEmail className="text-2xl" />
             Send Email
           </a>
         </div>

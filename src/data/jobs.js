@@ -1,25 +1,37 @@
 const jobs = [
   {
-    workplace: "Amabills Technology",
-    position: "Backend Developer",
-    duration: "March 2023 - Present",
+    workplace: "Swifre.com",
+    position: "Full Stack Developer",
+    duration: "September 2023 - November 2023",
     description: [
-      "Developing apis for graphql endpoint, using laravel(PHP Framework), lighthouse. ",
-      "Ensuring data is managed efficiently for better performance and relationship in with regards to backend and database.",
-      "Documenting created api on postman",
+      "Handled the design, creation and implementation of swifre.com.",
+      "Used laravel, tailwind css, react, inertia js, etc. to create the blog.",
+      "The Features includes: Blog Post, Comments, Reviews, etc.",
+      "Added possible search engine optimization features.",
     ],
-    url: "http://www.amabillstechnologies.com",
+    url: "https://www.swifre.com",
   },
   {
-    workplace: "Aluminum Super Stores",
-    position: "Backend Developer",
-    duration: "December 2022 - January 2023",
+    workplace: "Amabills Technology",
+    position: "Software Developer",
+    duration: "March 2023 - November 2023",
     description: [
-      "Wrote server side scripts and logics required to route pages for user interface. ",
-      "Wrote scripts for handling data queries to and from the database using mysql on php, including the design of the of data required for the proper working of application and buisiness choice.",
-      "Wrote scripts for authentication logics and application security.",
+      "Developing apis for graphql endpoint, using laravel(PHP Framework), lighthouse etc.",
+      "Ensuring data is managed efficiently for better performance with regards to backend and database management.",
+      "Documenting created api on postman.",
     ],
-    url: "http://aluminumsuperstores.com.ng",
+    url: "https://www.amabillstechnologies.com",
+  },
+  {
+    workplace: "Walkre.com",
+    position: "Software Developer",
+    duration: "Jan 2023 - Present",
+    description: [
+      "Handled the design, creation and implementation of walkre.com.",
+      "Used laravel a php framework for fullstack application developement to implement a RESTful APIs as a backend for walker platform.",
+      "Used Nextjs a JavaScript framework for frontend developement to scafold and implement basic application structure and then supplimenting unscafolded structure to meetup with design demand, other tools used includes React for application logic, Redux for state management, Css and Html for styling and user interface design.",
+    ],
+    url: "https://walkre.com",
   },
   {
     workplace: "El-Academy Organisation",
@@ -32,7 +44,7 @@ const jobs = [
       "Handled project using php to create an ecommerce	 website for clients, implementing various application security procedure or methods to create a secure ecommerce platform.",
       "Taught students/clients how carryout project using frameworks like Django for Python and Laravel for php, thereby, equiping them with revalant knowledge and experience required to make a web project.",
     ],
-    url: "https://www.elacademy.org.ng/",
+    url: "https://www.elacademy.org.ng",
   },
   {
     workplace: "Recharge and Get Paid",
@@ -44,18 +56,7 @@ const jobs = [
       "Recieved calls and made responses to clients queries and complain with regards to their challenges or observations as it may be, requiring our services to give them guidiance and or statisfaction.",
       "Managing and increasing client base of about 1 million and ensuring services are delivered at the right time, improving customer satisfaction on daily basis.",
     ],
-    url: "https://rechargeandgetpaid.com/",
-  },
-  {
-    workplace: "Walker.ng",
-    position: "Software Developer",
-    duration: "Septemer 2019 - April 2023",
-    description: [
-      "Handled the design, creation and implementation of walker.ng",
-      "Used laravel a php framework for fullstack application developement to implement a RESTful APIs as a backend for walker platform.",
-      "Used Nextjs a JavaScript framework for frontend developement to scafold and implement basic application structure and then supplimenting unscafolded structure to meetup with design demand, other tools used includes React for application logic, Redux for state management, Css and Html for styling and user interface design.",
-    ],
-    url: "https://walker.ng/",
+    url: "https://rechargeandgetpaid.com",
   },
 ];
 

@@ -6,7 +6,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	/* border-bottom: 1px solid rgba(0, 0, 0, 0.0975); */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -25,10 +25,14 @@
 
 .navigation .logo a {
 	position: relative;
-	color: rgba(0,0,0, 1);
+	color: rgb(8, 42, 138);
 	font-size: 30px;
 	font-family: "billabong", sans-serif;
 	text-decoration: none;
+}
+
+.navigation a {
+	color: rgb(8, 42, 138);
 }
 
 @media only screen and (min-width: 320px) and (max-width: 650px) {
