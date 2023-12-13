@@ -55,6 +55,20 @@ const projectsdata = [
       },
     ],
   },
+  {
+    name: "C2C Blog And Graphql APi",
+    description:
+      "A graphql api, using Django, Graphene.",
+    pic: "/c2c_blog_graphql.png",
+    tech: ["Python", "Django", "Graphene"],
+    links: [
+      {
+        label: "Github",
+        icon: "github",
+        url: "https://github.com/Exrelativity/c2c_blog.git",
+      },
+    ],
+  },
 ];
 
 
