@@ -23,7 +23,7 @@ function Landing() {
           style={{ color: "rgba(0,0,0,1)" }}
         >
           <strong style={{ color: "rgba(8,42,138,1)" }}>
-            A Full Stack Software Developer.
+            Machine Learning /Deep Learning, Full Stack Software Developer.
           </strong>
         </h1>
       </div>
