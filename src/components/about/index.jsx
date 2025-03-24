@@ -43,39 +43,10 @@ function About() {
             </h1>
           </div>
           <p className="text-center md:text-justify text-bold text-base md:leading-7 lg:leading-7 pb-2">
-            A graduate of the Federal University of Technology where he studied
-            Environmental Technology, He ventured into software programming as a
-            result of owns passion and convictions. He is Currently a Freelancer and Blogger, Prior to that, He was at{" "}
-            Amabills Technology, as a{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Software Developer</strong> and at{" "}
-            <a href="https://www.elacademy.org.ng/">El-Academy</a>{" "}as a{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>
-              Programing Tutor and Software Developer (Intern)
-            </strong>{" "}
-            where he taught many clients/students programming. Other experiences
-            includes working at{" "}
-            <a href="https://www.rechargeandgetpaid.com">Recharge And Get Paid</a>{" "}
-            as a <strong style={{ color: "rgba(8,42,138,1)" }}>Wallet Funding Officer</strong>{" "}
-            and at <a href="https://walker.com.ng/">Walkre.com and Swifre.com</a> as a{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Software Engineer</strong>. Strong
-            skills are in <strong style={{ color: "rgba(8,42,138,1)" }}>Python</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Php</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Laravel</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>React</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>React Native</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Graphql</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Excel</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>JavaScript</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Node.js</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>MongoDB</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Html</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Express.js</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Nest.js</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>MySQL</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Css</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Rust</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Java</strong>,{" "}
-            <strong style={{ color: "rgba(8,42,138,1)" }}>Django</strong>, etc.
+           <strong>Software Developer</strong> with a degree in <em>Environmental Technology</em> and <strong>extensive experience</strong> across <strong>full-stack development</strong>, <strong>data analysis</strong>, and <strong>machine learning</strong>.  
+  Proficient in languages like <strong>Python</strong>, <strong>JavaScript</strong>, <strong>PHP</strong>, <strong>Java</strong>, and <strong>Rust</strong>, along with frameworks including <strong>React</strong>, <strong>React Native</strong>, <strong>Next.js</strong>, <strong>Laravel</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, <strong>Nest.js</strong>, <strong>Django</strong>, <strong>GraphQL</strong>, <strong>PyTorch</strong>, <strong>TensorFlow</strong>, <strong>Scikit-learn</strong>, and <strong>Spring Boot</strong>.  
+  <strong>Proven track record</strong> in delivering <strong>robust, scalable applications</strong> through previous roles at <strong>Management System Space</strong>, <strong>Urban.ng</strong>, <strong>Amabills Technology</strong>, <strong>El-Academy</strong>, <strong>Walkre.com</strong>, and <strong>Swifre.com</strong>.  
+  Skilled in building both <strong>frontend</strong> and <strong>backend</strong> solutions with a strong focus on <strong>quality</strong> and <strong>efficiency</strong>.
           </p>
         </div>
       </div></>
